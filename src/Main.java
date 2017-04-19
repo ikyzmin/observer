@@ -1,5 +1,6 @@
 import ui.FaceFrame;
-import utils.SwingUtils;
+
+import javax.swing.*;
 
 /**
  * Created by Илья on 08.04.2017.
@@ -7,7 +8,7 @@ import utils.SwingUtils;
 public class Main {
 
     public static void main(String[] args) {
-        SwingUtils.runOnAwt(() -> {
+        SwingUtilities.invokeLater(() -> {
             FaceFrame faceFrame = new FaceFrame();
         });
     }
